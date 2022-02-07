@@ -5,7 +5,7 @@ const P: React.FC = ({ children }) => <p className="text-lg">{children}</p>
 const MarvelousLight: React.FC<{}> = () => {
   const navigate = useNavigate()
   return (
-    <div className="w-screen container mx-auto">
+    <div className="w-screen container p-4 mx-auto">
       <div className="flex flex-col justify-center items-center bg-white rounded shadow my-8 p-16">
         <div className="flex flex-col justify-center items-start">
           <h1 className="font-bold text-3xl text-indigo-800">

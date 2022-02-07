@@ -11,7 +11,7 @@ const Home = () => {
   const navigate = useNavigate()
 
   return (
-    <div className="flex flex-col container mx-auto mt-8 justify-center items-center">
+    <div className="flex flex-col container p-4 mx-auto mt-8 justify-center items-center">
       <h1 className="text-4xl font-bold">Song List</h1>
       <ul className="flex flex-col justify-center items-center my-4">
         <li
@@ -37,6 +37,11 @@ const Home = () => {
 
 const App = () => (
   <div>
+    <nav className="bg-black text-white text-3xl font-bold">
+      <div className="container p-4 mx-auto">
+        <h1>Brewer House Worship</h1>
+      </div>
+    </nav>
     <Router>
       <div>
         <Routes>
