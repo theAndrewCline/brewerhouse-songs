@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const P: React.FC = ({ children }) => <p className="text-lg">{children}</p>
 
 const MarvelousLight: React.FC<{}> = () => {
+  const navigate = useNavigate()
   return (
     <div className="w-screen container mx-auto">
       <div className="flex flex-col justify-center items-center bg-white rounded shadow my-8 p-16">
@@ -61,11 +62,21 @@ const MarvelousLight: React.FC<{}> = () => {
           </div>
 
           <div>
-            <button className="mx-2 bg-gray-300 text-lg px-4 py-2 rounded hover:shadow hover:bg-gray-400 ease-in-out duration-200">
-              <Link to="/">Songlist</Link>
+            <button
+              onClick={() => {
+                navigate('/')
+              }}
+              className="mx-2 bg-gray-300 text-lg px-4 py-2 rounded hover:shadow hover:bg-gray-400 ease-in-out duration-200"
+            >
+              Songlist
             </button>
-            <button className="mx-2 bg-indigo-600 text-lg px-4 py-2 rounded hover:shadow hover:bg-indigo-700 text-white ease-in-out duration-200">
-              <Link to="/center">Next Song</Link>
+            <button
+              onClick={() => {
+                navigate('/center')
+              }}
+              className="mx-2 bg-indigo-600 text-lg px-4 py-2 rounded hover:shadow hover:bg-indigo-700 text-white ease-in-out duration-200"
+            >
+              Next Song
             </button>
           </div>
         </div>
