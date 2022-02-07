@@ -28,7 +28,7 @@ const Home = () => {
           }}
           className="p-4 my-2 text-2xl hover:shadow hover:bg-indigo-500 hover:text-white ease-in-out duration-200 rounded"
         >
-          Be The Center
+          Center
         </li>
       </ul>
     </div>

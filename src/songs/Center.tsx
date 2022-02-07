@@ -8,7 +8,7 @@ const Center = () => {
     <div className="w-screen container mx-auto">
       <div className="flex flex-col justify-center items-center bg-white rounded shadow my-8 p-16">
         <div className="flex flex-col justify-center items-start">
-          <h1 className="font-bold text-3xl text-indigo-800">Be The Center</h1>
+          <h1 className="font-bold text-3xl text-indigo-800">Center</h1>
           <h2 className="text-gray-600 font-italic">Charlie Hall</h2>
 
           <div className="my-4">
