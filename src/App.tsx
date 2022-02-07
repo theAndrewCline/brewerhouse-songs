@@ -5,6 +5,7 @@ import {
   useNavigate
 } from 'react-router-dom'
 import MarvelousLight from './songs/MarvelousLight'
+import Center from './songs/Center'
 
 const Home = () => {
   const navigate = useNavigate()
@@ -35,15 +36,17 @@ const Home = () => {
 }
 
 const App = () => (
-  <Router>
-    <div>
-      <Routes>
-        <Route path="/marvelous" element={<MarvelousLight />}></Route>
-        <Route path="/center" element={<MarvelousLight />}></Route>
-        <Route path="/" element={<Home />}></Route>
-      </Routes>
-    </div>
-  </Router>
+  <div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/marvelous" element={<MarvelousLight />}></Route>
+          <Route path="/center" element={<Center />}></Route>
+          <Route path="/" element={<Home />}></Route>
+        </Routes>
+      </div>
+    </Router>
+  </div>
 )
 
 export default App
